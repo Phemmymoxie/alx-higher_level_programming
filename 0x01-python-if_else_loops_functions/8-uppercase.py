@@ -5,8 +5,5 @@ def uppercase(str):
         chk = ord(char)
         if 96 < chk < 122:
             chk -= 32
-            print("{}".format(chr(chk)), end='')
-        else:
-            print(char, end='')
-    print("\n")
-
+        print("{}".format(chr(chk)), end='')
+    print()

@@ -7,5 +7,4 @@ def uppercase(str):
             chk -= 32
             print("{}".format(chr(chk)), end='')
         else:
-            print(char, end='')
-
+            print(char)

@@ -11,6 +11,5 @@ elif len_arg == 0:
 else:
     print("{} arguments.".format(len_arg))
 
-print(len_arg)
 for i in range(len_arg):
     print("{}: {}".format(i + 1, sys.argv[i + 1]))

@@ -9,7 +9,7 @@ if len_arg == 1:
 elif len_arg == 0:
     print("{} arguments.".format(len_arg))
 else:
-    print("{} arguments.".format(len_arg))
+    print("{} arguments:".format(len_arg))
 
 for i in range(len_arg):
     print("{}: {}".format(i + 1, sys.argv[i + 1]))

@@ -3,4 +3,4 @@
 def max_integer(my_list=[]):
     list_len = len(my_list)
     new_list = sorted(my_list)
-    return new_list[list_len - 1]
+    return int(new_list[list_len - 1])

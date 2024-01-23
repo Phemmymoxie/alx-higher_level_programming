@@ -6,6 +6,6 @@ def print_matrix_integer(matrix=[[]]):
             len_list = len(li)
             for element in range(len_list):
                 if element == len_list - 1:
-                    print(li[element])
+                    print("{:d}".format(li[element]))
                 else:
-                    print(li[element], end=' ')
+                    print("{:d}".format(li[element]), end=' ')

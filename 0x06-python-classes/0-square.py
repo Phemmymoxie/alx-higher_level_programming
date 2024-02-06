@@ -4,6 +4,7 @@
 
 class Square:
     """ an empty class Square """
+
     def square(self):
-       """ This function does nothing """
-       pass
+        """ This function does nothing """
+        pass

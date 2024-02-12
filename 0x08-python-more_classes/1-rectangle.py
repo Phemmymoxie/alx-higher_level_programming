@@ -8,10 +8,6 @@ class Rectangle:
         self._width = width
         self._height = height
 
-    def rectangle(self):
-        """ This function does nothing """
-        pass
-
     @property
     def width(self):
         return self._width

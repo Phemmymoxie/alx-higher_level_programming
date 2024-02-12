@@ -5,16 +5,12 @@
 class Rectangle:
     """ an empty class Rectangle """
     def __init__(self, width=0, height=0):
-        self._width = width
-        self._height = height
-
-    def rectangle(self):
-        """ This function does nothing """
-        pass
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -22,11 +18,11 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self._width = value
+        self.__width = value
 
     @property
     def height(self):
-        return self._width
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -34,21 +30,21 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self._height = value
+        self.__height = value
 
     def area(self):
-        return self._width * self._height
+        return self.__width * self.__height
 
     def perimeter(self):
-        if self._height == 0 or self._width == 0:
+        if self.__height == 0 or self.__width == 0:
             return 0
-        add = self._width + self._height
-        return 2 * add
+        add = 2 * (self.__width + self.__height)
+        return add
 
     def __str__(self):
         resp_str = ""
-        if self._height == 0 or self._width == 0:
+        if self.__height == 0 or self.__width == 0:
             return ""
-        for i in range(self._height):
-            resp_str += "#" * self._width + "\n"
+        for i in range(self.__height):
+            resp_str += "#" * self.__width + "\n"
         return resp_str

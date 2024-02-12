@@ -3,13 +3,18 @@
 
 
 class Rectangle:
-    """ an empty class Rectangle """
+    """a new Rectangle.
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
     def __init__(self, width=0, height=0):
         self._width = width
         self._height = height
 
     @property
     def width(self):
+        """Get the Rectangle width"""
         return self._width
 
     @width.setter
@@ -22,6 +27,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """Get the Rectangle height"""
         return self._height
 
     @height.setter
@@ -31,11 +37,3 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
-
-
-my_rectangle = Rectangle(2, 4)
-print(my_rectangle.__dict__)
-
-my_rectangle.width = 10
-my_rectangle.height = 3
-print(my_rectangle.__dict__)

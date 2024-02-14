@@ -15,6 +15,3 @@ def add_integer(a, b=98):
         b = round(b)
     return a + b
 
-
-print(add_integer(0.3, 6))
-

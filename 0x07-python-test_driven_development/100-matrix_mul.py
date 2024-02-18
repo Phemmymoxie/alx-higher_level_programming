@@ -8,8 +8,10 @@ def matrix_mul(m_a, m_b):
     """Return the matrix resulting of
     the multiplication of m_a and m_b."""
 
-    if not isinstance(m_a, list) or not isinstance(m_b, list):
-        raise TypeError("m_a must be a list or m_b must be a list")
+    if not isinstance(m_a, list):
+        raise TypeError("m_a must be a list")
+    if not isinstance(m_b, list):
+        raise TypeError("m_b must be a list")
 
     for row_1 in m_a:
         if not isinstance(row_1, list):

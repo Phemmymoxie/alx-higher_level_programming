@@ -29,11 +29,13 @@ def matrix_mul(m_a, m_b):
     for row_1 in m_a:
         for col in row_1:
             if not isinstance(col, (int, float)):
-                raise TypeError("m_a should contain only integers or floats")
+                raise TypeError("m_a should contain "
+                                "only integers or floats")
     for row_2 in m_b:
         for col in row_2:
             if not isinstance(col, (int, float)):
-                raise TypeError("m_b should contain only integers or floats")
+                raise TypeError("m_b should contain "
+                                "only integers or floats")
 
     length_row = []
     for row in m_a:
@@ -48,15 +50,15 @@ def matrix_mul(m_a, m_b):
         raise TypeError("each row of m_b must be of the same size")
 
     a_col = 0
-    for col in m_a[0]:
+    for _ in m_a[0]:
         a_col += 1
     b_row = 0
-    for row in m_b:
+    for _ in m_b:
         b_row += 1
     if a_col != b_row:
         raise ValueError("m_a and m_b can't be multiplied")
 
-    result = [[0 for i in range(m_a[0])] for j in range(len(m_b))]
+    result = [[0 for _ in range(m_a[0])] for _ in range(len(m_b))]
     for i in range(len(m_a)):
         for j in range(len(m_b[0])):
             for k in range(len(m_b)):

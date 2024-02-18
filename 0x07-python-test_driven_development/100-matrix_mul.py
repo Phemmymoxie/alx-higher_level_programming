@@ -56,7 +56,7 @@ def matrix_mul(m_a, m_b):
     if a_col != b_row:
         raise ValueError("m_a and m_b can't be multiplied")
 
-    result = [[0 for i in range(a_col)] for j in range(b_row)]
+    result = [[0 for i in range(m_a[0])] for j in range(len(m_b))]
     for i in range(len(m_a)):
         for j in range(len(m_b[0])):
             for k in range(len(m_b)):

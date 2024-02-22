@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-""" Square class that inherits from the Rectangle class"""
+""" Square class that inherits from the Rectangle class """
 Rectangle = __import__('9-rectangle.py').Rectangle
 
 
 class Square(Rectangle):
-    """
-    Square class
-    """
+    """ Square class """
 
     def __init__(self, size):
-        """Initialize a new square.
+        """ Initialize a new square.
 
         Args:
             size (int): The size of the new square.

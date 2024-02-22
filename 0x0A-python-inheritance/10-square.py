@@ -4,7 +4,9 @@ Rectangle = __import__('9-rectangle.py').Rectangle
 
 
 class Square(Rectangle):
-    """ Square class """
+    """
+    Square class
+    """
 
     def __init__(self, size):
         """Initialize a new square.
@@ -15,3 +17,9 @@ class Square(Rectangle):
         self.__size = size
         self.integer_validator("size", self.__size)
         super().__init__(size, size)
+
+    def area(self):
+        """
+        area docs
+        """
+        return super().area()

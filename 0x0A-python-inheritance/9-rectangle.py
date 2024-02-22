@@ -20,10 +20,15 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         """ Rectangle Area """
-        print(self.__width * self.__height)
+        return self.__width * self.__height
 
     def __str__(self):
         """ The class str() Method """
-        cl_str = "[" + str(self.__class__.__name__) + "] "
-        str_rep = cl_str + str(self.__width) + "/" + str(self.__height)
-        return str_rep
+        cl_str = "[Rectangle] "
+        cl_str += str(self.__width) + "/" + str(self.__height)
+        return cl_str
+
+r = Rectangle(3, 5)
+
+print(r)
+print(r.area())

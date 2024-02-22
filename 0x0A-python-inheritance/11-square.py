@@ -18,6 +18,6 @@ class Square(Rectangle):
 
     def __str__(self):
         """ string return """
-        cl_str = "[square] {:d}/{:d}"\
-            .format(self.__size, self.__size)
+        cl_str = "[Square] "
+        cl_str += str(self.__size) + "/" + str(self.__size)
         return cl_str

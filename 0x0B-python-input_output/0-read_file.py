@@ -4,7 +4,7 @@
 
 def read_file(filename=""):
     """ read file function """
-    with open(filename, 'r', encoding='UTF8') as content:
+    with open(filename, 'r', encoding='UTF8', newline='') as content:
         text_read = content.read()
         print(text_read)
 

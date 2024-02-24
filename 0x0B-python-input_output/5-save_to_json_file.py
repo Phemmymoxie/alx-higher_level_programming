@@ -1,4 +1,4 @@
-#!/usr/bim/python3
+#!/usr/bin/python3
 """save to json file """
 import json
 
